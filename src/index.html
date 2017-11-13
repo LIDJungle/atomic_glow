@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="fonts/stylesheet.css">
+<style>
+    .canvas-holder {
+        position: absolute;
+        background-color: black;
+    }
+    .dimmer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #000000;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #wall1 {
+        z-index: 1;
+    }
+    #fontContainer {
+        color: transparent;
+        height: 1px;
+        overflow: hidden;
+    }
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="dimmer">&nbsp;</div>
+    <div id="wall1" class="canvas-holder">
+
+    </div>
+    <div id="wall2" class="canvas-holder">
+
+    </div>
+	<!-- Initialize web fonts here. They need to be on page to get loaded. -->
+	<div id="fontContainer">
+	
+	</div>
+</body>
+<script>
+    // jQuery and fabricjs need to be registered as globals before our other scripts start.
+    var $ = require('jquery');
+    var f = require('fabric');
+    var fabric = f.fabric;
+</script>
+
+<script src="js/lib/weather.class.js"></script>
+
+<script src="js/control.js"></script>
+
+<script src="js/system/player.network.js"></script>
+<script src="js/system/player.data.js"></script>
+<script src="js/system/player.canvas.js"></script>
+<script src="js/system/player.dimming.js"></script>
+<script src="js/system/player.startup.js"></script>
+<script src="js/system/player.utility.js"></script>
+<script src="js/system/player.pop.js"></script>
+
+<script src="js/website/player.website.js"></script>
+<script src="js/anim/player.anim.js"></script>
+<script src="js/transitions/player.transitions.js"></script>
+<script src="js/fonts/player.fonts.js"></script>
+
+<script>	
+    // Start Player
+	player.init();
+</script>
+</html>

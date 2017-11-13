@@ -1,0 +1,16 @@
+{
+  "displayId": "100002",
+  "pop": true,
+  "dev": false,
+  "version": "1.0.0",
+  "heartRate": 300,
+  "weatherUpdate": 900,
+  "paramUpdate": 900,
+  "URLS": {
+    "popUrl": "http://shineemc.com/api/public/index.php/storePop",
+    "heartbeatUrl": "http://shineemc.com/api/public/index.php/getSchedule",
+    "paramUrl": "http://shineemc.com/api/public/index.php/getDisplay",
+    "presentationUrl": "http://shineemc.com/api/public/index.php/loadPresentation",
+    "pingUrl": "http://shineemc.com/api/public/index.php/ping"
+  }
+}
